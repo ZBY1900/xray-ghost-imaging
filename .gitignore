@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+*.egg-info/
+.DS_Store
+Thumbs.db
+# 本地拿到的实验数据，绝不提交
+data/private/
+datasets/external/
+*.h5
+*.tif

@@ -1,0 +1,51 @@
+name: New entry
+description: Propose a paper, code repo or dataset
+title: "[entry] <first author> <year> <short title>"
+labels: ["new-entry"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type
+      options: [paper, code, dataset]
+    validations: { required: true }
+  - type: input
+    id: ident
+    attributes:
+      label: DOI or arXiv id
+      placeholder: "10.1103/PhysRevLett.117.113902  /  1605.04958"
+    validations: { required: true }
+  - type: input
+    id: title
+    attributes:
+      label: Title
+    validations: { required: true }
+  - type: textarea
+    id: claim
+    attributes:
+      label: What does it show?
+      description: One sentence, in your own words. Do not paste the abstract.
+    validations: { required: true }
+  - type: checkboxes
+    id: tags
+    attributes:
+      label: Tags (controlled vocabulary)
+      options:
+        - label: correlation
+        - label: computational
+        - label: fourier
+        - label: hadamard
+        - label: compressive
+        - label: deep-learning
+        - label: multipixel
+        - label: ghost-projection
+        - label: ghost-tomography
+        - label: phase-contrast
+        - label: fluorescence
+        - label: scattered
+  - type: dropdown
+    id: source
+    attributes:
+      label: Source
+      options: [synchrotron, lab, xfel, theory]
+    validations: { required: true }

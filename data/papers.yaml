@@ -1,0 +1,409 @@
+# X-ray ghost imaging 文献库 —— 唯一真源
+# 字段规范见 data/schema.json；method/source/modality/detector 只允许受控词表的值
+# verified: 逐字读过原文并核对元数据的日期；null = 仅由检索得到，未核对
+
+- id: pelliccia2016experimental
+  title: "Experimental x-ray ghost imaging"
+  authors: "Pelliccia, Rack, Scheel, Van Riessen, Abbey"
+  year: 2016
+  venue: "Phys. Rev. Lett. 117, 113902"
+  arxiv: "1605.04958"
+  doi: "10.1103/PhysRevLett.117.113902"
+  group: latrobe
+  source: [synchrotron]
+  method: [correlation]
+  modality: absorption
+  detector: bucket
+  key_claim: "First experimental proof of hard X-ray ghost imaging; Laue-split beam + isolated-bunch speckle."
+
+- id: pelliccia2018practical
+  title: "Practical x-ray ghost imaging with synchrotron light"
+  authors: "Pelliccia, Olbinado, Rack et al."
+  year: 2018
+  venue: "IUCrJ 5, 428-438"
+  arxiv: "1710.00727"
+  doi: null
+  group: latrobe
+  source: [synchrotron]
+  method: [correlation]
+  modality: absorption
+  detector: bucket
+  key_claim: "Si(200) Laue splitter makes two simultaneous speckle copies; compares reconstruction strategies."
+
+- id: olbinado2021phase
+  title: "Phase-sensitive x-ray ghost imaging"
+  authors: "Olbinado, Paganin, Cheng et al."
+  year: 2021
+  venue: "Optica 8, 1538-1544"
+  arxiv: "1903.08345"
+  doi: "10.1364/OPTICA.437481"
+  group: latrobe
+  source: [synchrotron]
+  method: [correlation, phase-contrast]
+  modality: phase
+  detector: bucket
+  key_claim: "Extends XGI to propagation-based phase contrast; low dose at high energy."
+
+- id: ceddia2018random
+  title: "On Random-Matrix Bases, Ghost Imaging and X-ray Phase Contrast Computational Ghost Imaging"
+  authors: "Ceddia, Paganin"
+  year: 2018
+  venue: "Phys. Rev. A 97, 062119"
+  arxiv: "1802.04258"
+  doi: "10.1103/PhysRevA.97.062119"
+  group: latrobe
+  source: [theory]
+  method: [computational, phase-contrast]
+  modality: phase
+  detector: bucket
+  key_claim: "Random-matrix basis formalism + dose-reduction criterion for CGI; proposes phase-contrast X-ray CGI."
+
+- id: kingston2019tomography
+  title: "X-ray ghost tomography: denoising, dose fractionation and mask considerations"
+  authors: "Kingston, Myers, Pelliccia et al."
+  year: 2019
+  venue: "IEEE Trans. Comput. Imaging 5, 136-149"
+  arxiv: "1804.03370"
+  doi: null
+  group: latrobe
+  source: [synchrotron]
+  method: [ghost-tomography, correlation]
+  modality: absorption
+  detector: bucket
+  key_claim: "First adaptation of tomography to XGI; denoising, dose fractionation, mask design."
+
+- id: zhang2017tabletop
+  title: "Table-top X-ray Ghost Imaging with Ultra-Low Radiation"
+  authors: "Zhang, He, Wu et al."
+  year: 2017
+  venue: "arXiv preprint"
+  arxiv: "1709.01016"
+  doi: null
+  group: cas
+  source: [lab]
+  method: [computational]
+  modality: absorption
+  detector: bucket
+  key_claim: "Lab microfocus source, single-photon-order radiation dose; images plane and natural objects."
+
+- id: he2019deeplearning
+  title: "Deep learning based high-resolution incoherent x-ray imaging with a single-pixel detector"
+  authors: "He, Zhang, Li et al."
+  year: 2019
+  venue: "arXiv preprint"
+  arxiv: "1905.10364"
+  doi: null
+  group: cas
+  source: [lab]
+  method: [deep-learning, hadamard, computational]
+  modality: absorption
+  detector: bucket
+  key_claim: "Compressed Hadamard set + multi-level wavelet CNN; image from 18.75% of measurements."
+
+- id: zeng2026video
+  title: "Tabletop X-ray ghost video of moving objects"
+  authors: "Zeng, Li, Yu et al."
+  year: 2026
+  venue: "arXiv preprint"
+  arxiv: "2601.00552"
+  doi: null
+  group: cas
+  source: [lab]
+  method: [computational]
+  modality: absorption
+  detector: bucket
+  key_claim: "Fast-spinning coding disk enables XGI video of moving objects; code at Zeng-SJTU/Xray-Video."
+
+- id: huang2024dose
+  title: "Deep Learning in Classical X-ray Ghost Imaging for Dose Reduction"
+  authors: "Huang, Loesel, Paganin et al."
+  year: 2024
+  venue: "Phys. Rev. A 110, 063512"
+  arxiv: "2411.06340"
+  doi: null
+  group: latrobe
+  source: [theory]
+  method: [deep-learning, correlation]
+  modality: absorption
+  detector: bucket
+  key_claim: "Quantifies dose reduction from DL priors in classical XGI."
+
+- id: shukrun2026montecarlo
+  title: "Monte Carlo Framework for Physics-Based Design and Optimization of X-Ray Compressive Ghost Imaging Systems"
+  authors: "Shukrun, Ben-Yehuda, Korotinsky et al."
+  year: 2026
+  venue: "arXiv preprint"
+  arxiv: "2610.21334"
+  doi: null
+  group: barilan
+  source: [theory]
+  method: [compressive, computational]
+  modality: absorption
+  detector: bucket
+  key_claim: "FLUKA-based photon transport model incl. photoelectric, Compton and fluorescence channels."
+
+- id: smith2020twophoton
+  title: "Two-photon X-ray Ghost Microscope"
+  authors: "Smith, Wang, Shih"
+  year: 2020
+  venue: "Opt. Express"
+  arxiv: "2002.01668"
+  doi: "10.1364/OE.401449"
+  group: other
+  source: [theory]
+  method: [correlation]
+  modality: absorption
+  detector: bucket
+  key_claim: "Quantum two-photon X-ray ghost microscope proposal for sub-optical resolution."
+
+- id: shukrun2023montecarlo
+  title: "Monte Carlo Simulations for Ghost Imaging Based on Scattered Photons"
+  authors: "Shukrun, Klein, Sefi et al."
+  year: 2023
+  venue: "arXiv preprint"
+  arxiv: "2306.16702"
+  doi: null
+  group: barilan
+  source: [theory]
+  method: [scattered, computational]
+  modality: scattering
+  detector: bucket
+  key_claim: "Simulation of scattered-photon XGI; resolution/dose trade-offs."
+
+- id: manni2023xrf
+  title: "Synchrotron-based X-ray Fluorescence Ghost Imaging"
+  authors: "Manni, Ben-Yehuda, Klein et al."
+  year: 2023
+  venue: "Opt. Lett."
+  arxiv: "2306.16258"
+  doi: "10.1364/OL.499046"
+  group: barilan
+  source: [synchrotron]
+  method: [fluorescence, computational]
+  modality: fluorescence
+  detector: bucket
+  key_claim: "Synchrotron XRF-GI setup + reconstruction pipeline; extends lab XRF-GI."
+
+- id: benyehuda2023scatteredct
+  title: "High-resolution computed tomography with scattered x-ray radiation and a single pixel detector"
+  authors: "Ben Yehuda, Sefi, Klein et al."
+  year: 2023
+  venue: "arXiv preprint"
+  arxiv: "2305.12468"
+  doi: null
+  group: barilan
+  source: [lab]
+  method: [scattered, ghost-tomography, computational]
+  modality: scattering
+  detector: bucket
+  key_claim: "Uses otherwise-discarded scattered radiation for high-resolution CT with a single pixel."
+
+- id: sefi2024multipixel
+  title: "25-Fold Resolution Enhancement of X-ray Microscopy Using Multipixel Ghost Imaging"
+  authors: "Sefi, Ben Yehuda, Klein et al."
+  year: 2024
+  venue: "arXiv preprint"
+  arxiv: "2402.14023"
+  doi: null
+  group: barilan
+  source: [lab]
+  method: [multipixel, computational]
+  modality: absorption
+  detector: multipixel
+  key_claim: "Multipixel GI with hard X-rays gives 25x resolution gain over commercial CT."
+
+- id: ceddia2023universalmask
+  title: "Universal mask for hard X rays"
+  authors: "Ceddia, Aminzadeh, Cook et al."
+  year: 2023
+  venue: "Optica 10, 1067-1073"
+  arxiv: "2303.12809"
+  doi: "10.1364/OPTICA.490006"
+  group: latrobe
+  source: [synchrotron]
+  method: [ghost-projection]
+  modality: absorption
+  detector: bucket
+  key_claim: "Ghost projection: reversed GI with a translated static mask; experimental proof with hard X-rays."
+
+- id: kingston2023patterns
+  title: "Optimizing illumination patterns for classical ghost imaging"
+  authors: "Kingston, Roberts, Aminzadeh et al."
+  year: 2023
+  venue: "Phys. Rev. A 107, 023524"
+  arxiv: "2211.03792"
+  doi: null
+  group: latrobe
+  source: [theory]
+  method: [correlation]
+  modality: absorption
+  detector: bucket
+  key_claim: "Pattern-set design determines image quality; optimization framework without object priors."
+
+- id: ganesan2022quantified
+  title: "Quantified Advantage of Ghost Imaging over Regular Imaging"
+  authors: "Ganesan, Batelaan"
+  year: 2022
+  venue: "arXiv preprint"
+  arxiv: "2212.01709"
+  doi: null
+  group: other
+  source: [theory]
+  method: [correlation]
+  modality: absorption
+  detector: bucket
+  key_claim: "Closed-form comparison of GI vs direct imaging SNR for a single-pixel aperture."
+
+- id: ceddia2022ghostprojection2
+  title: "Ghost projection. II. Beam shaping using realistic spatially-random masks"
+  authors: "Ceddia, Kingston, Pelliccia et al."
+  year: 2022
+  venue: "Phys. Rev. A 106, 033512"
+  arxiv: "2202.10572"
+  doi: null
+  group: latrobe
+  source: [synchrotron]
+  method: [ghost-projection]
+  modality: absorption
+  detector: bucket
+  key_claim: "Beam shaping by translating a single static random mask; no configurable optics needed."
+
+- id: kingston2021dose
+  title: "On the Inherent Dose-Reduction Potential of Classical Ghost Imaging"
+  authors: "Kingston, Fullagar, Myers et al."
+  year: 2021
+  venue: "Phys. Rev. A 103, 033503"
+  arxiv: "2009.02139"
+  doi: "10.1103/PhysRevA.103.033503"
+  group: latrobe
+  source: [theory]
+  method: [correlation]
+  modality: absorption
+  detector: bucket
+  key_claim: "Foundational dose analysis: when CGI genuinely reduces dose and when it does not."
+
+- id: klein2021elementmapping
+  title: "Chemical element mapping by x-ray ghost fluorescence"
+  authors: "Klein, Sefi, Schwartz et al."
+  year: 2021
+  venue: "arXiv preprint"
+  arxiv: "2102.07755"
+  doi: null
+  group: barilan
+  source: [lab]
+  method: [fluorescence, computational]
+  modality: fluorescence
+  detector: bucket
+  key_claim: "Focusing-free XRF element mapping via GI; overcomes raster-scan speed limits."
+
+- id: sefi2020highspeed
+  title: "High-speed x-ray imaging with single-pixel detector"
+  authors: "Sefi, Klein, Strizhevsky et al."
+  year: 2020
+  venue: "arXiv preprint"
+  arxiv: "2004.09247"
+  doi: null
+  group: barilan
+  source: [lab]
+  method: [computational]
+  modality: absorption
+  detector: bucket
+  key_claim: "100 kHz imaging of a spinning chopper at ~15 um resolution with one pixel."
+
+- id: lane2019advantages
+  title: "What are the advantages of ghost imaging? Multiplexing for x-ray and electron imaging"
+  authors: "Lane, Ratner"
+  year: 2019
+  venue: "Opt. Express"
+  arxiv: "1907.12178"
+  doi: "10.1364/OE.379503"
+  group: other
+  source: [theory]
+  method: [correlation, hadamard]
+  modality: absorption
+  detector: bucket
+  key_claim: "Multiplexing framework for error/dose; the reference text on when GI wins."
+
+- id: tian2025review
+  title: "Multi-wavelength ghost imaging: a review"
+  authors: "Tian, Oh, Spielmann"
+  year: 2025
+  venue: "Vicinagearth 2, 4"
+  arxiv: "2506.13423"
+  doi: "10.1007/s44336-025-00013-0"
+  group: other
+  source: [theory]
+  method: [correlation, computational]
+  modality: absorption
+  detector: bucket
+  key_claim: "Survey from XUV to THz and matter waves; best single entry point to the wider field."
+
+- id: li2021xfel
+  title: "Ghost-imaging-enhanced non-invasive spectral characterization of stochastic x-ray free-electron-laser pulses"
+  authors: "Li, Laksman, Mazza et al."
+  year: 2021
+  venue: "arXiv preprint"
+  arxiv: "2110.10197"
+  doi: null
+  group: other
+  source: [xfel]
+  method: [correlation]
+  modality: absorption
+  detector: bucket
+  key_claim: "GI used for single-shot spectral characterization of stochastic XFEL pulses."
+
+- id: manni2025noise2ghost
+  title: "Noise2Ghost: Self-supervised deep convolutional reconstruction for ghost imaging"
+  authors: "Manni, Karpov, Batenburg et al."
+  year: 2025
+  venue: "arXiv preprint"
+  arxiv: "2504.10288"
+  doi: null
+  group: barilan
+  source: [theory]
+  method: [deep-learning, correlation]
+  modality: absorption
+  detector: bucket
+  key_claim: "Self-supervised denoising for low-count GI; no clean reference needed."
+
+- id: aminzadeh2025huffman
+  title: "High-resolution x-ray scanning with a diffuse, Huffman-patterned probe to minimise radiation damage"
+  authors: "Aminzadeh, Kingston, Roberts et al."
+  year: 2025
+  venue: "J. Synchrotron Rad. 32, 700-717"
+  arxiv: "2410.18348"
+  doi: null
+  group: latrobe
+  source: [synchrotron]
+  method: [hadamard, ghost-projection]
+  modality: absorption
+  detector: bucket
+  key_claim: "Huffman-coded diffuse probe: same energy spread over wider footprint, decoding recovers delta-like response."
+
+- id: porat2026lips
+  title: "LIPS-PC: Learning Illumination Patterns for Single-Pixel Classification"
+  authors: "Porat, Eden, Cohen"
+  year: 2026
+  venue: "arXiv preprint"
+  arxiv: "2611.04780"
+  doi: null
+  group: other
+  source: [theory]
+  method: [deep-learning, computational]
+  modality: absorption
+  detector: bucket
+  key_claim: "Learns the measurement matrix for classification instead of reconstruction; dose-motivated for radiography."
+
+- id: levinson2026organ
+  title: "Human-organ-scale x-ray fluorescence ghost imaging for radioisotope-free diagnostics"
+  authors: "Levinson, Shukrun, Vigano et al."
+  year: 2026
+  venue: "arXiv preprint"
+  arxiv: "2602.04461"
+  doi: null
+  group: barilan
+  source: [lab]
+  method: [fluorescence, computational]
+  modality: fluorescence
+  detector: bucket
+  key_claim: "First organ-scale XRF-CGI demo on a thyroid phantom; tracer-free alternative to nuclear medicine."

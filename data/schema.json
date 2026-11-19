@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "XGI paper record",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "title", "authors", "year", "venue", "group", "source", "method", "key_claim"],
+    "properties": {
+      "id":        { "type": "string", "pattern": "^[a-z]+[0-9]{4}[a-z0-9]+$" },
+      "title":     { "type": "string", "minLength": 10 },
+      "authors":   { "type": "string", "minLength": 3 },
+      "year":      { "type": "integer", "minimum": 2008, "maximum": 2100 },
+      "venue":     { "type": "string" },
+      "arxiv":     { "type": ["string", "null"], "pattern": "^[0-9]{4}\\.[0-9]{4,5}$" },
+      "doi":       { "type": ["string", "null"], "pattern": "^10\\.[0-9]{4,9}/\\S+$" },
+      "group":     { "enum": ["latrobe", "barilan", "cas", "other"] },
+      "source":    { "type": "array", "minItems": 1,
+                     "items": { "enum": ["synchrotron", "lab", "xfel", "theory"] } },
+      "method":    { "type": "array", "minItems": 1,
+                     "items": { "enum": ["correlation", "computational", "fourier", "hadamard",
+                                         "compressive", "deep-learning", "multipixel",
+                                         "ghost-projection", "ghost-tomography",
+                                         "phase-contrast", "fluorescence", "scattered"] } },
+      "modality":  { "enum": ["absorption", "phase", "fluorescence", "scattering"] },
+      "detector":  { "enum": ["bucket", "multipixel", "ccd"] },
+      "key_claim": { "type": "string", "minLength": 20 },
+      "verified":  { "type": ["string", "null"] }
+    }
+  }
+}
